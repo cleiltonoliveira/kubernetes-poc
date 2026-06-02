@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: orders-client
+spec:
+  containers:
+    - name: orders-client
+      image: busybox:1.36
+      command: ["sh", "-c", "sleep 3600"]
+  restartPolicy: Never
